@@ -1,0 +1,17 @@
+{
+  "name": "OnlyItCookies",
+  "manifest_version": 3,
+  "version": "1.0",
+  "permissions": ["cookies"],
+  "description": "An Easy Way For Delete All Of Cookies Of A Website Without Problem",
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "cookie_1f36a (1).png",
+    "32": "cookie_1f36a (2).png",
+    "48": "cookie_1f36a (3).png",
+    "128": "cookie_1f36a (4).png"
+  }
+}

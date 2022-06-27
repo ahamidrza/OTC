@@ -1,0 +1,126 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+<script src="script.js" type="module"></script>
+<style>
+    @font-face {
+        src: url("Inter-Medium.ttf");
+        font-family: "Inters";
+    }
+    body {
+        width: 240px;
+        text-transform: capitalize;
+        margin: 0;
+        text-align: center;
+        padding: 20px;
+    }
+
+    * {
+        font-family: "Inters",sans-serif!important;
+        margin: 0;
+        padding: 0;
+        text-transform: capitalize;
+    }
+
+    button {
+    }
+
+    #input {
+        border-radius: 100px;
+        border: #b7b7b7 solid 2px;
+        outline: none;
+        padding: 5px;
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        transition: .2s;
+        margin-top: 10px;
+        box-shadow: #e8e8e8 0 0 0 2px;
+        padding-bottom: 6px;
+        width: 200px;
+    }
+
+    #input:focus {
+        border: #b7b7b7 solid 2px;
+        box-shadow: #d9d9d9 0 0 0 3px;
+    }
+
+    #input::placeholder, #input {
+        color: #b0b0b0;
+    }
+
+    #go {
+        border-radius: 100px;
+        border: #00ace3 solid 2px;
+        outline: none;
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        color: white;
+        margin-bottom: 15px;
+        font-weight: 800;
+        width: 150px;
+        margin-right: auto;
+        background-color: #00c1ff;
+        transition: .2s;
+        margin-top: -3px;
+        box-shadow: #b4ebff 0 0 0 2px;
+        padding: 5px 10px 6px;
+    }
+
+    #go:active, #input:active {
+        filter: brightness(95%);
+    }
+
+    #message {
+        border-radius: 20px;
+        background-color: #ffe2ea;
+        color: #ffbec8;
+        padding: 5px 10px 6px;
+        height: 20px;
+        margin-top: 15px;
+    }
+
+    #b {
+        margin-top: 34px;
+        transition: .2s;
+width: 130px;
+        animation-name: b;
+        animation-duration: 70s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes b {
+        0% {
+            transform: rotate(0);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    #go:focus {
+        box-shadow: #9ce5ff 0 0 0 3px;
+    }
+
+    #ma {
+        margin-top: 5px;
+        display: block;
+        color: #9d9d9d;
+    }
+
+</style>
+<div style="background-color: #f9f9f9;;width: 200px;height:200px;margin-left: auto;margin-right: auto;border-radius: 100%;border: #e7e7e7 dashed 2px">
+    <img draggable="false" style="filter: drop-shadow(0 0 15px rgba(0,0,0,0.32))" src="cookie_1f36a%20(4).png" id="b">
+</div>
+<form id="control-row">
+    <b style="margin-top: 15px;font-size: 25px;margin-bottom: 10px;color: #4e4e4e;display: block">OnlyThisCookies</b>
+    <label for="input" id="ma">on this Domain :</label>
+    <input spellcheck="false" type="text" id="input" placeholder="please type your domain . . .">
+    <br>
+    <button id="go">Clear Cookies</button>
+</form>
+<span id="message" hidden></span>
+<p style="font-size: 13px;color: #dadada;margin-top: 20px;margin-bottom: -5px">by hamidreza ahmadi</p>
